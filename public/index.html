@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Export slack private group history</title>
+		<title>Export slack history</title>
 		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -13,9 +13,9 @@
 		</style>
 	</head>
 	<body>
-		<h1>Slack private group history export helper</h1>
+		<h1>Slack history export helper</h1>
 		<p>
-			Please follow the instructions to get the history of private group.
+			Please follow the instructions to get the history.
 			<ol>
 				<li>
 					Click
@@ -36,7 +36,7 @@
 					<img src="2.png">
 				</li>
 				<li>
-					Click "Get private groups" button
+					Click first button
 				</li>
 				<li>
 					Select the channel
@@ -53,12 +53,14 @@
 		</div>
 		<br>
 		<div>
-			<input type="button" value="Get private groups" onclick="javascript:getList();"/>
+			<input type="button" value="Get Channels" onclick="javascript:getList('channels');"/>
+			<input type="button" value="Get Groups"   onclick="javascript:getList('groups');"/>
+			<input type="button" value="Get PMs"      onclick="javascript:getList('im');"/>
 		</div>
 		<br>
-		<div id="groups-div" style="display: none;">
+		<div id="channels-div" style="display: none;">
 			Channels:
-			<select id="groups-select">
+			<select id="channels-select">
 
 			</select>
 			<br>

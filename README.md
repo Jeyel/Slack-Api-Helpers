@@ -1,7 +1,5 @@
 #Slack-Api-Helpers
-Get all history of private groups from slack by your own token.
 
-You can clone the repo and run locally with node 
+This repository is a fork, thanks to @keremtiryaki for the main idea.
 
-or you can use [this link](https://s3-eu-west-1.amazonaws.com/trototype-website/index.html) to get your private group history.
-
+With this version, you will be able to get history from private groups, private messages and public channels. Conversations will be saved under html format in a dedicated folder.
